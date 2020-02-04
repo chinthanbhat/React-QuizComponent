@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
 });
 
 // Import poll controller
-var pollController = require('./poll_controller');// poll routes
+var pollController = require('./controllers/poll_controller');// poll routes
 router.route('/polls')
     .get(pollController.index)
     .post(pollController.new);

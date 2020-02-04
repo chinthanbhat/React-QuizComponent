@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 }));app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
 // Deprecated: mongoose.connect('mongodb://localhost/resthub');
-mongoose.connect('mongodb://localhost/resthub', { useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/polls_db', { useNewUrlParser: true});
 var db = mongoose.connection;
 // Added check for DB connection
 if(!db)

@@ -1,5 +1,5 @@
 // pollController.js// Import poll model
-Poll = require('./pollModel');// Handle index actions
+Poll = require('../models/pollModel');// Handle index actions
 exports.index = function (req, res) {
     Poll.get(function (err, polls) {
         if (err) {
